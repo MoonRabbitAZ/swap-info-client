@@ -1,0 +1,71 @@
+/* App variables */
+:root, :before, :after {
+  --app-font-family: 'Open Sans', sans-serif;
+  --app-side-padding: #{toRem(106)};
+  --app-side-padding-medium: #{toRem(50)};
+  --app-side-padding-small: #{toRem(14)};
+  --app-navbar-mobile-z-index: 100;
+}
+
+/* Color variables */
+:root, :before, :after {
+  /* Base */
+  --col-black: #000000;
+  --col-white: #ffffff;
+  --col-dark-blue: #04021c;
+  --col-blue-magenta: #1e1d2f;
+  --col-light-blue: #eeeeff;
+  --col-blueberry: #7353f2;
+  --col-desaturated-dark-blue: #434274;
+  --col-dark-grayish-violet: #615874;
+  --col-brick-red: #ce4966;
+  --col-green: #4fb46c;
+  --col-soft-cyan: #4fbbd9;
+  --col-dark-cyan: #151818;
+  --col-pale-cyan: #eefffc;
+  --col-pure-cyan: #00ffd1;
+  --col-strong-cyan: #0ac5a3;
+
+  --col-bg: var(--col-dark-cyan);
+  --col-block-bg: rgba(2, 17, 13, 0.95);
+  --col-text-secondary: var(--col-dark-grayish-violet);
+  --col-primary: var(--col-pure-cyan);
+  --col-border: rgba(var(--col-pure-cyan-rgb), 0.3);
+
+  /* RGB color */
+  --col-black-rgb: 0, 0, 0;
+  --col-blue-magenta-rgb: 87, 39, 235;
+  --col-dark-violet-rgb: 45, 16, 128;
+  --col-dark-blue-rgb: 24, 22, 35;
+  --col-brick-red-rgb: 206, 73, 102;
+  --col-green-rgb: 79, 180, 108;
+  --col-light-blue-rgb: 238, 238, 255;
+  --col-soft-cyan-rgb: 79, 187, 217;
+  --col-dark-blue-2-rgb: 4, 2, 28;
+  --col-pure-cyan-rgb: 0, 255, 209;
+  --col-strong-cyan-rgb: 10, 197, 163;
+}
+
+/* Fields variables */
+:root, :before, :after {
+  --field-transition-duration: 0.2s;
+  --field-error-message-font-size: #{toRem(14)};
+  --field-line-height: 1.375;
+  --field-border-radius: #{toRem(4)};
+  --field-padding: #{toRem(13) toRem(16)};
+  --field-font-size: #{toRem(16)};
+  --field-min-height: #{toRem(48)};
+  --field-label-font-size: #{toRem(12)};
+  --field-label-margin: #{toRem(8)};
+  --field-label-color: var(--col-light-blue);
+  --field-border: #{toRem(1)} solid var(--col-light-blue);
+  --field-border-color-hover: var(--col-blueberry);
+  --field-secondary-border-color-hover: var(--col-light-blue);
+  --field-color-error: var(--col-brick-red);
+  --field-border-color-disabled: var(--col-desaturated-dark-blue);
+  --field-text-color-disabled: var(--col-desaturated-dark-blue);
+  --field-text-color: var(--col-light-blue);
+  --field-bg-color: rgba(var(--col-dark-blue-rgb), 0.7);
+  --field-secondary-bg-color: var(--col-dark-blue);
+  --field-placeholder-color: var(--col-dark-grayish-violet);
+}

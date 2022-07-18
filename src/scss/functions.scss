@@ -1,0 +1,10 @@
+@use 'sass:math';
+
+@function toRem($px) {
+  $remValue: math.div($px, 16) + rem;
+
+  @return $remValue;
+}
+@function vh($vh) {
+  @return calc(var(--vh, 1vh) * #{$vh});
+}

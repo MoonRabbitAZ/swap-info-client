@@ -1,0 +1,200 @@
+/* stylelint-disable declaration-no-important */
+@import '~@static/fonts/index.css';
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+@import 'functions';
+
+html {
+  font-family: var(--app-font-family);
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  min-height: vh(100);
+  display: flex;
+  flex-direction: column;
+}
+
+body, #app {
+  background-color: var(--col-bg);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  line-height: inherit;
+}
+
+body,
+p,
+li,
+ul,
+span,
+a {
+  color: var(--col-light-blue);
+  font-size: toRem(16);
+}
+
+p {
+  line-height: 1.375;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--col-light-blue);
+}
+
+h1 {
+  font-size: toRem(32);
+  line-height: 1.2;
+
+  @include respond-to(tablet) {
+    font-size: toRem(24);
+  }
+}
+
+h2 {
+  font-size: toRem(24);
+  line-height: 1.2;
+
+  @include respond-to(tablet) {
+    font-size: toRem(18);
+  }
+}
+
+h3 {
+  font-size: toRem(18);
+  line-height: 1.2;
+
+  @include respond-to(tablet) {
+    font-size: toRem(16);
+  }
+}
+
+h4 {
+  font-size: toRem(16);
+  line-height: 1.2;
+
+  @include respond-to(tablet) {
+    font-size: toRem(14);
+  }
+}
+
+h5 {
+  font-size: toRem(14);
+  line-height: 1.2;
+
+  @include respond-to(tablet) {
+    font-size: toRem(12);
+  }
+}
+
+h6 {
+  font-size: toRem(12);
+  line-height: 1.2;
+}
+
+.app__button {
+  @include button();
+}
+
+.app__button-primary {
+  @include button-primary();
+}
+
+.app__button-secondary {
+  @include button-secondary();
+}
+
+.app__button-icon {
+  @include button-icon();
+}
+
+.app__button-text {
+  @include button-text();
+}
+
+.app-container {
+  width: 100%;
+  padding: toRem(40) var(--app-side-padding);
+  max-width: toRem(1512);
+  margin: 0 auto;
+
+  @include respond-to(medium) {
+    padding: toRem(40) var(--app-side-padding-medium);
+  }
+  @include respond-to(tablet) {
+    padding: toRem(36) var(--app-side-padding-small);
+  }
+}
+.app-block {
+  border-radius: toRem(8);
+  border: toRem(1) solid var(--col-border);
+  padding: toRem(18);
+  background-color: var(--col-block-bg);
+
+  &--stretch {
+    flex: 1;
+  }
+}
+
+.app-block__header-txt {
+  font-size: toRem(14);
+  font-weight: 500;
+}
+
+.app-block__value-txt {
+  font-size: toRem(24);
+  font-weight: 500;
+}
+
+.app-table {
+  overflow: scroll;
+
+  &__header {
+    display: grid;
+    grid-gap: toRem(14);
+    border-bottom: toRem(1) solid var(--col-border);
+    padding: toRem(16) toRem(18);
+
+    > * {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      &:first-child {
+        justify-content: flex-start;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  &__body-row {
+    display: grid;
+    grid-gap: toRem(14);
+    border-bottom: toRem(1) solid var(--col-border);
+    padding: toRem(16) toRem(18);
+    &:last-child {
+      border-bottom: none;
+    }
+
+    > * {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+
+      &:first-child {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__body-row-cell {
+    font-size: toRem(14);
+  }
+  &__header-cell {
+    font-size: toRem(14);
+  }
+}

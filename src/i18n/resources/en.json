@@ -1,0 +1,132 @@
+{
+  "config": {
+    "number": {
+      "formats": {
+        "amounts": {
+          "default": {
+            "decimalSeparator": ".",
+            "groupSeparator": ",",
+            "groupSize": 3,
+            "decimalPlaces": 2
+          }
+        },
+        "default": {
+          "decimalSeparator": ".",
+          "groupSeparator": ",",
+          "groupSize": 3,
+          "decimalPlaces": 2
+        },
+        "integer": {
+          "groupSeparator": ",",
+          "groupSize": 3,
+          "decimalPlaces": 0
+        },
+        "percent": {
+          "decimalSeparator": ".",
+          "groupSeparator": ",",
+          "groupSize": 3,
+          "decimalPlaces": 2,
+          "suffix": "%"
+        }
+      }
+    }
+  },
+  "translations": {
+    "formats": {
+      "money": "{{value, money}}",
+      "percent": "{{value, percent}}",
+      "number": "{{value, number}}"
+    },
+    "abbreviation-numbers": {
+      "thousand": "k",
+      "million": "M",
+      "billion": "B",
+      "trillion": "T"
+    },
+    "app-navigation-mobile": {
+      "overview-link": "Overview",
+      "tokens-link": "Tokens",
+      "pairs-link": "Pairs"
+    },
+    "app-header": {
+      "overview-link": "Overview",
+      "tokens-link": "Tokens",
+      "pairs-link": "Pairs"
+    },
+    "homepage": {
+      "tokens-title": "Top Tokens",
+      "pairs-title": "Top Pairs",
+      "see-all-link": "See All",
+      "analytics-title": "MoonRabbit Analytics"
+    },
+    "token-list": {
+      "error-msg": "An error occurred. Please try again later or contact the owner",
+      "no-data-msg": "No tokens yet"
+    },
+    "pair-list": {
+      "error-msg": "An error occurred. Please try again later or contact the owner",
+      "no-data-msg": "No pairs yet"
+    },
+    "collection-loader": {
+      "more-btn": "Load More"
+    },
+    "tokens-page": {
+      "title": "Top Tokens"
+    },
+    "pairs-page": {
+      "title": "Top Pairs"
+    },
+    "token-page": {
+      "error-msg": "An error occurred. Please try again later or contact the owner",
+      "token-stats-title": "Token Stats",
+      "top-pairs-title": "Top Pairs",
+      "token-info-title": "Token Information",
+      "add-liquidity-btn": "Add Liquidity",
+      "trade-btn": "Trade",
+      "view-on-btn": "View on Explorer",
+      "symbol-lbl": "Symbol",
+      "name-lbl": "Name",
+      "address-lbl": "Address",
+      "total-liquidity-lbl": "Total Liquidity",
+      "volume-lbl": "Volume (24hrs)",
+      "transactions-lbl": "Transactions (24hrs)"
+    },
+    "pair-page": {
+      "error-msg": "An error occurred. Please try again later or contact the owner",
+      "pair-stats-title": "Pair Stats",
+      "total-liquidity-lbl": "Total Liquidity",
+      "volume-lbl": "Volume (24hrs)",
+      "fees-lbl": "Fees (24hrs)",
+      "add-liquidity-btn": "Add Liquidity",
+      "trade-btn": "Trade",
+      "name-lbl": "Pair Name",
+      "pair-info-title": "Pair Information",
+      "address-lbl": "{{token}} Address",
+      "view-on-btn": "View on Explorer",
+      "pair-address-lbl": "Pair Address",
+      "pair-title": "{{token1}}-{{token2}} Pair"
+    },
+    "home-page-statistic": {
+      "eth-price": "AAA Price: {{value, money}}",
+      "transactions": "Transactions (24H): {{value, number}}",
+      "pairs": "Pairs: {{value, number}}",
+      "fees": "Fees (24H): {{value, money}}",
+      "error-msg": "An error occurred. Please try again later or contact the owner"
+    },
+    "tokens-table": {
+      "name-header": "Name",
+      "symbol-header": "Symbol",
+      "liqudity-header": "Liqudity",
+      "volume-header": "Volume (24hrs)",
+      "price-header": "Price",
+      "price-change-header": "Price Change (24hrs)"
+    },
+    "pairs-table": {
+      "name-header": "Name",
+      "volume-7d-header": "Volume (7d)",
+      "liqudity-header": "Liqudity",
+      "volume-header": "Volume (24hrs)",
+      "fees-header": "Fees (24hrs)"
+    }
+  }
+}
