@@ -118,8 +118,7 @@
       "symbol-header": "Symbol",
       "liqudity-header": "Liqudity",
       "volume-header": "Volume (24hrs)",
-      "price-header": "Price",
-      "price-change-header": "Price Change (24hrs)"
+      "price-header": "Price"
     },
     "pairs-table": {
       "name-header": "Name",

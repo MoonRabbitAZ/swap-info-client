@@ -4,7 +4,6 @@ export type Token = {
   liquidity: number,
   volume24Hours: number,
   price: number,
-  priceChange24Hours: number,
   transactionsNumber: number,
   contract: string
   id: string,

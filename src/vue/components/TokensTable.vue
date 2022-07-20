@@ -16,9 +16,6 @@
       <span class="app-table__header-cell tokens-table__price-cell">
         {{ 'tokens-table.price-header' | globalize }}
       </span>
-      <span class="app-table__header-cell tokens-table__price-change-cell">
-        {{ 'tokens-table.price-change-header' | globalize }}
-      </span>
     </div>
     <div class="app-table__body">
       <div
@@ -50,9 +47,6 @@
         <span class="app-table__body-row-cell tokens-table__price-cell">
           {{ token.price | formatMoney }}
         </span>
-        <span class="app-table__body-row-cell tokens-table__price-change-cell">
-          {{ token.priceChange24Hours | formatPercent }}
-        </span>
       </div>
     </div>
   </div>
@@ -77,8 +71,8 @@ export default Vue.extend({
 .tokens-table__header,
 .tokens-table__body-row {
   display: grid;
-  grid-template-columns: 1.5fr 0.6fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 'name symbol liquidity volume price change';
+  grid-template-columns: 1.5fr 0.6fr 1fr 1fr 1fr;
+  grid-template-areas: 'name symbol liquidity volume price';
 
   @include respond-to(medium) {
     grid-template-columns: toRem(180) 1fr 1fr 1fr;
@@ -127,14 +121,6 @@ export default Vue.extend({
 
 .tokens-table__price-cell {
   grid-area: price;
-
-  @include respond-to(medium) {
-    display: none;
-  }
-}
-
-.tokens-table__price-change-cell {
-  grid-area: change;
 
   @include respond-to(medium) {
     display: none;
