@@ -149,7 +149,7 @@ h6 {
 }
 
 .app-table {
-  overflow: scroll;
+  overflow: auto;
 
   &__header {
     display: grid;
