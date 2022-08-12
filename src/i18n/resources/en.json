@@ -7,14 +7,14 @@
             "decimalSeparator": ".",
             "groupSeparator": ",",
             "groupSize": 3,
-            "decimalPlaces": 2
+            "decimalPlaces": 8
           }
         },
         "default": {
           "decimalSeparator": ".",
           "groupSeparator": ",",
           "groupSize": 3,
-          "decimalPlaces": 2
+          "decimalPlaces": 8
         },
         "integer": {
           "groupSeparator": ",",
