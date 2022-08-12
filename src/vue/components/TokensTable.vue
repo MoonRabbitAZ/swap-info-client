@@ -71,11 +71,11 @@ export default Vue.extend({
 .tokens-table__header,
 .tokens-table__body-row {
   display: grid;
-  grid-template-columns: 1.5fr 0.6fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
   grid-template-areas: 'name symbol liquidity volume price';
 
   @include respond-to(medium) {
-    grid-template-columns: toRem(180) 1fr 1fr 1fr;
+    grid-template-columns: toRem(180) 0.5fr 1fr 1fr;
     grid-template-areas: 'name symbol liquidity volume';
   }
   @include respond-to(tablet) {
