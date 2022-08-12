@@ -70,11 +70,11 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .pairs-table__header,
 .pairs-table__body-row {
-  grid-template-columns: 1.5fr 0.6fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
   grid-template-areas: 'name liqudity volume volumeWeek fees';
 
   @include respond-to(medium) {
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 'name liqudity volume fees';
   }
   @include respond-to(tablet) {
