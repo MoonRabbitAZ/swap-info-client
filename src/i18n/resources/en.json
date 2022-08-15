@@ -111,6 +111,7 @@
       "transactions": "Transactions (24H): {{value, number}}",
       "pairs": "Pairs: {{value, number}}",
       "fees": "Fees (24H): {{value, money}}",
+      "volume": "Volume (24H): {{value, number}}",
       "error-msg": "An error occurred. Please try again later or contact the owner"
     },
     "tokens-table": {
