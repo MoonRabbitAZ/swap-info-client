@@ -20,6 +20,11 @@
             }) }}
           </span>
           <span class="home-page-statistic__global-statistic-item">
+            {{ 'home-page-statistic.volume' | globalize({
+              value: statistics.volume24Hours
+            }) }}
+          </span>
+          <span class="home-page-statistic__global-statistic-item">
             {{ 'home-page-statistic.pairs' | globalize({
               value: statistics.pairsNumber
             }) }}
