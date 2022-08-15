@@ -13,7 +13,9 @@ export function makeApiCallers (axios: AxiosInstance) {
       return api.get(url)
     },
     getTokens () {
-      return api.get<Token[]>('/integrations/dex-back/statistics/tokens')
+      return api.get<Token[]>('/integrations/dex-back/statistics/tokens', {
+        params: { sort: '-liquidity' },
+      })
     },
     getToken (id:string) {
       return api.get<Token[]>(`/integrations/dex-back/statistics/tokens/${id}`)
@@ -21,7 +23,12 @@ export function makeApiCallers (axios: AxiosInstance) {
     getPairs (params?: {
       'filter[token_id]'?: string,
     }) {
-      return api.get<Pair[]>('/integrations/dex-back/statistics/pairs', { params })
+      return api.get<Pair[]>('/integrations/dex-back/statistics/pairs', {
+        params: {
+          ...params,
+          sort: '-liquidity',
+        },
+      })
     },
     getPair (id:string) {
       return api.get<Pair[]>(`/integrations/dex-back/statistics/pairs/${id}`)
