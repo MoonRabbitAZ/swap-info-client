@@ -117,14 +117,14 @@
     "tokens-table": {
       "name-header": "Name",
       "symbol-header": "Symbol",
-      "liqudity-header": "Liqudity",
+      "liqudity-header": "Liquidity",
       "volume-header": "Volume (24hrs)",
       "price-header": "Price"
     },
     "pairs-table": {
       "name-header": "Name",
       "volume-7d-header": "Volume (7d)",
-      "liqudity-header": "Liqudity",
+      "liqudity-header": "Liquidity",
       "volume-header": "Volume (24hrs)",
       "fees-header": "Fees (24hrs)"
     }
